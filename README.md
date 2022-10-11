@@ -9,10 +9,7 @@
 - Payment Page
 - Gift Page
 
-# Area of Responsibility :
-- Lead the team.
-- Responsible for creating layout of Home Page.
-- Contributed in Login page.
+
 
 # Tech-Stack :
 CSS  |  HTML  | JavaScript  | Git
