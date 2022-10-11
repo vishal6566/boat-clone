@@ -1,0 +1,638 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#252525;
+            margin: 0px;
+            padding: 0px;
+        }
+        #top{
+            background-color: red;
+            color: white;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #top>p{
+            margin-top: 10px;
+        }
+        #navbar{
+            /* border: 4px solid green; */
+            height: 100px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 25% 40% 35%;
+            grid-template-rows: 100px;
+            gap: 10px;
+            justify-content: space-evenly;
+            background-color: black;
+            color: white;
+
+        }
+        #navbar>div{
+             /* border: 4px solid yellow; */
+             box-sizing: border-box;
+        }
+        #navbar div:nth-child(1) img{
+            width: 36%;
+            height: 70%;
+            display: block;
+            margin-top: 10px;
+            margin-left: 60px;
+            /* padding-left: 30px; */
+        }
+        #navbar div:nth-child(2) {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 100px;
+            gap: 10px;
+            justify-content: space-evenly;
+        }
+        #navbar div:nth-child(2)>div{
+            display: grid;
+            /* border: 4px solid red; */
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            padding-left: 10px;
+        }
+        #offer{
+            text-align: justify;
+            padding-left: 0px;
+        }
+        #shop{
+            width: 70px;
+            height: 40px;
+            font-size: 20px;
+            border: none;
+            background-color: black;
+            color: white;
+        }
+        #more{
+            width: 70px;
+            height: 40px;
+            font-size: 20px;
+            border:none;
+            background-color: black;
+            color: white;
+        }
+        #navbar div:nth-child(3){
+            display: grid;
+            grid-template-columns:60% repeat(3,10%);
+            grid-template-rows: 100px;
+            gap: 10px;
+            justify-content: space-evenly;
+        }
+        #navbar div:nth-child(3)>div{
+            /* border: 4px solid red; */
+            display: grid;
+            align-items: center;
+            padding-left: 10px;
+        }
+        #navbar div:nth-child(3) >div img{
+            width:40px;
+            height: 35px ;
+            /* margin-left: 5px; */
+            
+
+        }
+        #search{
+             width:98%;
+             height: 60px;
+             border-radius: 30px;
+             padding-left: 20px;
+             border: none;
+             background-color: white;
+        }
+        #navbar div:nth-child(3) >div:nth-child(4){
+            padding-left: 0px;       
+        } 
+        #navbar div:nth-child(3) >div:nth-child(4){
+            padding-left: 0px;       
+        }
+        #login{
+            /* border: 4px solid red; */
+            width: 35%;
+            height: 550px;
+            margin: auto;
+            color: white;
+        }
+        #login >p:first-child{
+            font-size: 60px;
+            text-align: center;
+            margin-top: 0px;
+        }
+        #login >p{
+            text-align: center;
+            font-size: 20px;
+            margin-top: -30px;
+        }
+        #login p>a{
+            color: gray;
+        }
+        #p1{
+            text-align: center;
+            font-size: 20px;
+            margin-top: -30px;
+            color: gray;
+        }
+        input{
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            margin-top: 15px;
+            background-color:transparent;
+            color: white;
+            border: 1px solid gray;
+            border-radius: 4px;
+            padding-left: 15px;
+        }
+        button{
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+            margin-top: 30px;
+            background-color:red;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:rgb(170, 7, 7);
+        }
+        #lastbox input+button{
+            float: right;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            margin-top: -45px;
+            color:white;
+            font-size: 20px;
+            font-weight: bold;
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+        }
+        #create{
+            
+            /* display: block; */
+            margin-top: 0px;
+            /* border: 4px solid yellow; */
+            height: 50px;
+            width: 100%;
+            color: white;
+        }
+        #create>p{
+            text-align: center;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        #create>p>a:hover{
+             color: white;
+        }
+        #midbox{
+            width: 100%;
+            height: 80px;
+            background-color: #2c2c2c;
+            /* border: 4px solid yellow; */
+            display:flex ;
+            align-items: center;
+            justify-content: center;
+        }
+        #midbox >div{
+                  width: 75%;
+                  height: 60%;
+                  margin: auto;
+                  /* border: 4px solid green; */
+        }
+        #midbox>div >p{
+            text-align: center;
+            margin: auto;
+            color: rgb(190, 172, 172);
+        }
+        #lastbox{
+            background-color: black;
+            /* border: 3px solid rgb(42, 22, 221); */
+            width: 100%;
+            height: 750px;
+        }
+        #first{
+            /* border: 4px solid rgb(23, 212, 23); */
+            height: 70%;
+            width: 100%;
+            display: flex;
+            margin-top: 0px;
+            padding-top: 40px;
+        }
+        #first>div:first-child{
+            width: 44%;
+            height: 70%;
+            /* border: 4px solid yellow; */
+        }
+        #first>div:last-child{
+            width: 56%;
+            height: 100%;
+            /* border: 10px solid pink; */
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 100%;
+            gap: 10px;
+
+        }
+        #first>div:last-child p{
+                color: gray;
+                cursor: pointer;
+        }
+        #first>div:last-child h3{
+                color: white;
+        }
+        #first>div:last-child>div{
+        
+            height: 100%; 
+            /* border: 4px solid rgb(61, 226, 11); */
+            margin-top: -10px;
+            /* background-color: white; */
+        }
+        #first>div:first-child>div{
+            width: 90%;
+            height: 80%;
+            /* border: 4px solid rgb(219, 4, 4); */
+            margin: auto;
+            color: gray;
+        }
+        #first>div:first-child>div>img{
+            width: 16%;
+            height: 16%;
+            /* border: 4px solid rgb(219, 4, 4); */
+            margin: auto;
+        }
+        #first>div:first-child>div>div{
+            width: 60%;
+            height: 30%;
+            /* border: 4px solid rgb(98, 10, 199); */
+            display: grid;
+            margin-top: 20px;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 80%;
+            gap: 0px;
+            
+        }
+        #first>div:first-child>div>div>div{
+              /* border: 3px solid red; */
+              border-radius: 4px;
+              display: grid;
+              justify-content: center;
+              align-items: center;
+
+        }
+        #first>div:first-child>div>div>div>a>img{
+              /* border: 4px solid black; */
+              background-color: transparent;
+              width: 70%;
+              height: 70%;
+              border-radius: 10px ;
+              padding-left: 15px;
+        }
+        #last{
+             /* border: 10px solid rgb(214, 10, 61); */
+             height: 25%;
+             width: 100%;
+             display: flex;
+             margin-top: 0px;
+        }
+        #last>div:first-child{
+            /* border: 4px solid rgb(55, 0, 255); */
+            height: 40%;
+            width: 40%;
+            margin-top: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #last>div:last-child{
+            /* border: 4px solid rgb(212, 22, 22); */
+            height: 40%;
+            width: 60%;
+            margin-top: 0px;
+            display: flex;
+            justify-content:center;
+        }
+        #last>div:last-child>div{
+            /* border: 4px solid rgb(4, 18, 212); */
+            height: 100%;
+            width: 78%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        h4{
+            color: white;
+        }
+        #third{
+            text-align: center;
+            color: grey;
+            margin-top: -110px;
+            background-color: black;
+        }
+        #socialmedia >div:hover{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <p>Track it all with 700+ Active Modes.🏃‍♂️ Grab your boAt Xtend Sport @ ₹2499</p>
+    </div>
+    <div id="navbar">
+           <div>
+            <a href="index.html"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229" alt=""></a>
+           </div>
+           <div>
+             <div>
+                <select name="" id="shop">
+                    <option value="">Shop</option>
+                </select>
+             </div>
+             <div>boAt|DC</div>
+             <div id="'offer">OfferZone</div>
+             <div>
+                <select name="" id="more">
+                    <option value="">More</option>
+                    <option value="">Daily Deals</option>
+                    <option value="">Gifting</option>
+                    <option value="">Do What Floats Your boAt</option>
+                    <option value="">Meet the boAtheads</option>
+                    <option value="">Corporate Orders</option>
+                    <option value="">Earn Rs.100</option>
+                    <option value="">Careers</option>
+                </select>
+             </div>
+           </div>
+           <div>
+            <div><input id="search" type="text" placeholder="search"></div>
+            <div> <a href="Login.html"> <img  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon4.png?v=1655206048" alt=""></a></div>
+            <div><a href="Gift.html"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt=""></a></div>
+            <div><a href="Cart.html"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon-3.png?v=1655206047" alt=""></a></div>
+           </div>
+    </div>
+    <div id="login">
+        <p>Register</p>
+        <p>Please fill in the fields below:</p>
+        <form action="">
+            <input id="firstname" type="text" placeholder="First Name">
+            <input id="lastname" type="text" placeholder="Last Name">
+            <input id="email" type="email" placeholder="E-mail">
+            <input id="password" type="password" placeholder="Password">
+            <button>Create Account</button>
+        </form> 
+        <div id="create">
+            <p id="p1">Already have an account?  <a href="Login.html">Login</a></p>
+        </div>
+    </div>
+    <div id="midbox">
+        <div>
+            <p>India's fastest growing audio & wearables brand. The most incredible range of wireless earphones, earbuds, headphones, smart watches, and home audio. From workouts to adventures, boAt will get you sailing!</p>
+        </div>
+
+    </div>
+    <div id="lastbox">
+        <div id="first">
+            <div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267" alt="boAt">
+                     <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+                     <input type="email" placeholder="Email Address*">
+                     <button>SUBSCRIBE</button>
+                     <div id="socialmedia">
+                         <div>
+                            <a href="https://www.facebook.com/boat.nirvana/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiA5ayLSbJW5sMGOTthyF9Iu4eStKFuwA_1u9K3I-3e09s7Xpw5V9a001T6b6VJzrmkCI&usqp=CAU" alt=""></a>
+                         </div>
+                         <div>
+                            <a href="https://twitter.com/RockWithboAt"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUAAAD////8/Pzo6OixsbH39/dRUVHe3t6MjIzy8vKHh4eWlpY4ODinp6clJSUiIiIRERG/v7/KyspwcHA/Pz9ISEh5eXm5ublpaWl/f3/GxsZiYmKgoKBkZGTk5OTZ2dlMTExXV1ctLS0YGBiampoyMjIcHBxYST6wAAAG70lEQVR4nO2daZuyOgyG2RFQQdHBZVSc15n//xOPgLixFdomlZP741yj5JFS0jRJNf0N0/KdMNI+kSh0fMt8F6S9ygum2GZyMw3MRoX2BNs6QUzseoUzbMMEMqtR6DnYVgnF8d4VunNsmwQzd18VLrENksDyWaGLbY0U3IdCb2xDtGDu3RWOa5J54JQKx/SaeGVWKLSx7ZCInSsciydTxyRTaGJbIRXzqjDANkIqwVXh568m2pjq2rgH6XWYaha2CZKxNB/bBMn42lj9mRJHC7FNkEyofWbQiZ2x6yMIgiAIgiAIgiAIgiAIgiAIgiD+p0TneHuxdtb35Gv/h22MeOJv9570mmVku7MY2ySROIv3DPscaySZMNGlUkFwZ7dq+tT2C9JGLnyvUV/Gd91nwoun/8g0aiXu2w/HVn1XjpX03mliXP8szIQ6dp6o/f+kS1/G/uUjh1P+x60gC2pZ6bopROKq8wYWPGZVZ3Z7Zj0R12/EysaOAImxwSZQ1zf5/6eXxy9y4b98C3nNDf9zsGXVp+tGer4snkt95OYbHoqL8Er8YhfYdFNlYd2u4nIN1JhHYCJKSz1luY1ucpRprHkEyp1mNO0xP9jrwV/S7MZ0Y0t92b/9+vvu/6/FarKeReDw35WN1wdomHe45xCon+9fcxCl6RX/9XqDqjV4xuh9Gp2YkirugrcrLvp/hV9rOhNeMUR/tjt96ADq5PJ+0WPv56J9NdHG8d91IoitwjWV9dr/rlzW6PlbHgYLPO2D5WOEy1ohVu7hlX4lDcvBCl8c2Z0kgVmxVBW3R7whsuu+oTfCVnAV6qcJg93Z3wgRqP/KEtho4DFl/ILqgzyEc/eFhjJtvCjj03gSoM9ujFCJoHnd6jGFOHle9+WF5IYZ20IPy+5343z427DElOx6t3vNi64lVfMoZ2Upuw6mK/qQtA8hrpVhBkDpeacNu7aJjlOhITWMeINhMnSb7eBUKDmAUVDnt1V/a6thQud8Dmuj/KL5YTTGnKU1n/7jm0thugewu85HK/73/mnGQHcDEI9hz0igfbq8RnP4fBq5kdI7vW+DmUyc8jX9HiTox9DYV0+Gxau9027mb84cMQxdqsf9At+zxEMKpDDFEmiAbe3Puo2RAmDDJ6RxCtjGY8W8vSkUiK5kq9vaxUFRCOGW+vbNrdhj3EWIfkH7zOHM30qpgHhEXyDyhAq/21t+x+vf+mQtmYC0YsGZYgoMkEYe/JGk4cD0lhu+7cDPCUQhljuTAdMAkWuLmhOgrFpEhTAChWw8DAPKK63dQQRhQM7AIFhjbeIBay63w1IodU/tGazZVN7GdgWkuQawJ/cZRyFMNLgAflFxxZCXnFCDmIyRfsA4pSXD85qGA9zSmWmLTSzQnePFpMX0AL75P7REuSUWtQAPVMkpJrV8QYZsYGfSkj9A5warpDSAuo14fcfnFoxGzOb4vzzFE6wYyMXdgfT4PkiiUJXo4WXsJa+Ksaq6zeNpsdgt3aNpyo2E47wqNMDgcIqlMAISCBVjqwEoJgUWgaoCs9WNegYHU0E9L5XkP0hCgHAGwrLpGb48PBbQT9ySnjqE3qdGUKFWI0j+2jNnqQIBI/nN8CWMdiCpmrknEiUqMEZzuHpctCG7ewI77I1Y+gGU1c3Cr5SYlFpHM0p4GFU7E+7HEvxmRFv2NjP/FrnSF9OLSjTRIREl0kBcFHbwE1gn2+CeXBWaRuvhDaIC1TcNhze8obrAKW+EWPUhyp34pvjBmme3W0I7UPVpwwi5A4y20ncw5I+Cuyq3EG5oltsLVRaEdcQilhfqHk+8T0S43Yaic0y4X4hZAEtv6TGEVZxwvxxueJDJlU04m2n5M/+l2yBxTXHRiwXq7kRJlHkr13UD/8rhHU+NqGGGnMQLpeIVK/G7oh09e+BJxVavLVTTl7EWFzvcgSZv9+AsZKzaiex+sjxMuYOHp63KTnZGNOFYyhszdWNpz6ytQcFDL0Hf2O1BvOsn0j4FSi9x64icGevc6iYbjHRtEUSxtWydeYyltVXxxdeP6BBYy6Pp2bnbmrmvnmeeFrNgsgmxbRPLfO2k6Xq9Wk2VWC8QBEEQBEEQBEEQBEEQBEEQBEEQhCBUTHgUSaSNbOuyQqh9XNZATxxN3cRqMfiaUnmPErA0vD5oMJgaWo8pGKa6htrqTT7BVeG4h6l5VahY0btYJnqmEL3DjUTsXCHQsRgYZJV0+WEVY/Vr8k5kuULA49ogKU6PLg4cgW+zDEFRkHU7UgWwJz8Yt6qQ8tAYd2wDdV6W1N2PxfHGNd049+Tzp4N/xvTSeCq4fj7ayB6LdzN5zjh/PbzJDD5/pTF9a2pcOZ7KtHwn/MzwVBQ6vlUp4/kPkgtX3mvBd7AAAAAASUVORK5CYII=" alt=""></a>
+                         </div>
+                         <div>
+                            <a href="https://www.instagram.com/boat.nirvana/"><img src="data:image/png;base64,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" alt=""></a>
+                         </div>
+                         <div>
+                            <a href="https://www.youtube.com/channel/UCY3JXaO_v8H3E6hTYUp5qWQ"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKiEDswMlIwHD6lCekQpWHFJO7B-2dPGLxnh8cMC_2LgY7R84cAEc1JTz_mAspJDXs8Jk&usqp=CAU" alt=""></a>
+                         </div>
+                         <div>
+                            <a href="https://www.linkedin.com/company/boat-lifestyle/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEUAAAD///9MTEz8/PyTk5PNzc339/c4ODjo6OhPT0+MjIzu7u6xsbERERGnp6fy8vIiIiLe3t6fn58+Pj5GRkaBgYF6enpfX1/R0dG6urqPj4/X19eZmZlmZmZZWVlkZGQuLi4xMTEZGRlycnK3t7fExMQnJycdHR0+1Fr0AAAFB0lEQVR4nO2daXeqMBCGQW8RcEG02kXa2lbo//+H17WKLJPKjFnO+3wup/Mck5BkksHzrwhHcTQdezYynkbxKLwW8sp62UB3mJ0ZZGGjYRDrjo6JOKg3nOgOjJFJjWES6Y6KlSi5NkwL3TExU6RlwwfdAQnwcGmY6o5GhPRsmLjWRA8Uya+hW4PMmehk6NJroszkYBjojkOQYG/oykymjnhnGOqOQpRwa5jpDkKUbGto/2qijYHvud1It83UG+kOQZiR5/JIuiP2XJ3PnIi8qe4QhJl6dm46qeO6HwAAACBB722ZbWaLt3fdgcjwcZG6GuZL3eGwsxxeJeb6bu0OPFUyjy6l47bMavycynfkDYK+H651x8ZCXQv9xYWdrOZfcD+q6g6vO0198MSz7gC78kQI+v5Md4gdae2EB+xOPy5pQf9Fd5CduJ7J1PKpO8oOfKgIWt0TR0qGNic/FMaZHXPdcd5MT03QX+gO9GbeFA3tPeyg8q7YkesO9GYyRUN7D1VtnDekZt32Gy4UDe3th+6Ppe+Khq+6A70dpYm371u8Q9y+g3Ei0R1mB9Re+VYfyuk73kjVZjUr3UF2I6ANe7pj7EZMCtr7uj/yQAgOv3RH2Blinf+oO77urFsFv3WHx8GgZWbjhOCW56Y+6EATPVK/UMztH2TOFC8Vv5Xl78EKn7PLQTUZWT1Va2K+mORpmuaTVyf1AAAAAAAAAACA+zL+Wc/n6+JHdxwyPC436anGU/j8Ejt2E3s+q+6vDx8Wwnd5e36/Hf9f/YMB9dz1ZY1lWtE70M+fZA0pGgzJ3GrZcNF6ZCAUvGZ1H8PKraqqo9j5x3sY/lAZvD0roVOsdzCkk7BHZA4myRtW8wWNpBJn5qUN100jaC2BQDZP2PBR4SRECf47j7KGc6XzOiXYO6Oo4effBflPYEka/iTU39TC/CtKGiq9Bmvg7YtyhvnrjYLM5yPkDIe3dMIDAed7Uc6wC5xH58005BxtDDVkvENuqiHfoVZTDX22NbGxhmzXOo01ZPsRzTXk+hHNNfSZduAMNmQ6YH43w2G6SsO/PWSTYf5d7He2p++bPyz6eTYY72DYL1cs+Fa8TsbVTOUNN5UqsZniszw3ysQN65papLj4ZznmKmzYrw/yS62YA8tiX9iwMT+o1Bk35hs2j4aPKs+zLDBEDdtq96jcI2eZuEka9ltT9Qrb/QFHASdJw/bKiyqFVThW+oKGAXHlZkUbcqQUBQ2pKYlCXpHj3pWgIbWELWhDjotJgobkKRK6mRpuSP7vpkuBthjSNSXp/LfZhnRJSboYgNmGdAHbfzCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEoYBhRP6Xhpug5HP0NWX6VhBHqehx1GsnWtc/SDzWi+j7n2vyfwuXiQYAAAAAAPfC9Ynd2KtUEnOMqefYl2oqRB5/IX6ziD3uIvWmMfLYatUaSugxVo02kYHvEfW2bCfbGrrdTMOtocBnTcwh9neGge4wBAn2hkJfUTKBiX8wZNlWNZH9ZvbeMOGor2geRfJryPo9DHM41M48ZhfoJIl9HD/Tc8qfpK411OJU/fQ3Q5S4Ndyci0lf5MBcemlMzlqXWb7AldlNfFm4vpzHDDP7VxqDrFwKvJKpDUdxNLVze2o8jeJRpdL5f2YjU4xtkVEnAAAAAElFTkSuQmCC" alt=""></a>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>SHOP</h3>
+                    <p>True Wireless Earbuds</p>
+                    <p>Wireless Headphones</p>
+                    <p>Wired Headphones</p>
+                    <p>Wireless Speakers</p>
+                    <p>Home Audio</p>
+                    <p>Mobile Accessories</p>
+                    <p>Smart Watches</p>
+                    <p>TRebel</p>
+                    <p>Misfit</p>
+                    <p>Gift Card</p>
+                    <p>Rock In India</p>
+                    <p>Earn Rs.100</p>
+                </div>
+                <div>
+                    <h3>HELP</h3>
+                     <p>Track Your Order</p>
+                     <p>Warranty & Support</p>
+                     <p>Return Policy</p>
+                     <p>Service Centers</p>
+                     <p>Bulk Orders</p>
+                     <p>FAQs</p>
+                     <p>Why Buy Direct</p>
+                </div>
+                <div>
+                    <h3>COMPANY</h3>
+                    <p>About boAt</p>
+                    <p>News</p>
+                    <p>Read Our Blog</p>
+                    <p>Careers</p>
+                    <p>Security</p>
+                    <p>Terms of Service</p>
+                    <p>Privacy Policy</p>
+                    <p>Investor Relations</p>
+                </div>
+            </div>
+        </div>
+        <div id="last">
+                 <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_900x_aff68517-98f4-4a82-9aee-2405cea66251_350x.png?v=1650262054" alt="">
+                 </div>
+                 <div>
+                    <div>
+                        <h4>DOWNLOAD THE APP</h4>
+                        <a href="https://play.google.com/store/apps/details?id=boatlifestylein.android.app"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293" alt=""></a>
+                        <a href="https://apps.apple.com/us/app/id1521646593"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store.png?v=1608620293" alt=""></a>
+                    </div>
+                </div>
+        </div>
+        <div id="third">
+            <p>© 2022 Imagine Marketing Limited. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./Signup.js"></script>
+
+
+
+
+
+
+
+
+<!-- *********************************second sing************start ***************** -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <title>Register</title>
+    
+<!----------------------------------*title logo start*---------------------------------------->
+<link rel = "icon" href = 
+"https://play-lh.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw" 
+        type = "image/x-icon">
+
+<!----------------------------------*title logo end*---------------------------------------->
+
+<link rel="stylesheet" href="
+Signup.css">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<!-- *************************************naV START********************************** -->
+
+<div class="offer-zone">
+    <a  href=""><p>Listen to the sound you deserve with stone 135.Bag it at ₹799!🤩</p></a></div>
+    <div class="nav-bar-main">
+      <div class="nav-inner-bar">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229" alt="boat-logo">
+        
+        <div class="list-option">
+        <ul class="more-option">
+            <li class="shop">Shop <i id="shopangle" class="fa-solid fa-angle-down"></i>
+            <ul class="shop-list">
+                <li><a href="airdopes.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_540x.png?v=1612338251" alt="img1"></a></li>
+                <li><a href="Rockerz.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_540x.png?v=1612338387" alt="img1"></a></li>
+                <li><a href="smartWatch.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/pro_gear_720x.jpg?v=1648546494" alt="img1"></a></li>
+                <li><a href="baseheadWired.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/latest_background_b4f773ca-05d9-41cc-a7cf-3104993ae895_540x.png?v=1612338356" alt="img1"></a></li>
+                <li><a href="stoneSpeaker.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/box-5_540x.png?v=1612338436" alt="img1"></a></li>
+                <li><a href="aavanteSoundbars.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Collections_5baef8f1-a67a-40a5-a537-4258c6caae6a_540x.png?v=1622452897" alt="img1"></a></li>
+                <li><a href="TrebelForWomen.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/New-Category-Banners_with-Trebal_09_500x.png?v=1615033153" alt="img1"></a></li>
+                <li><a href="mobileAccessories.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/bence-boros-253214-unsplash_500x.jpg?v=1648545875" alt="img1"></a></li>
+                <li><a href="limitedEdition.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-limited-edition_540x.png?v=1612338560" alt="img1"></a></li>
+                <li><a href="misFit.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_500x.png?v=1624859990" alt="img1"></a></li>
+                <li><a href="immortalGaming.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_500x.png?v=1626094103" alt="img1"></a></li>
+            </ul>
+         </li>
+            <li class="shop">Offer Zone</li>
+            <li class="shop">More <i id="moreangle" class="fa-solid fa-angle-down"></i>
+            <ul class="more-list">
+                <li><a href="">Gifting</a></li>
+                <li><a href="">Do What Float Your boAt</a></li>
+                <li><a href="">Meet the boAtheads</a></li>
+                <li><a href="">Corporate Orders</a></li>
+                <li><a href="">Earn Rs.100</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+            </li>
+         </ul>
+        </div>
+        <div class="nav-search" >
+        
+         <i class="fa-solid fa-magnifying-glass"> </i>
+        <input placeholder="Search..." type="search"  >
+        
+        </div>
+
+        <div class="logo-side">
+         <a href="Cart.html"> <i id="niteshcart" class="fa-solid fa-cart-shopping"></i></a>
+         
+         <a href="Gift.html"><i id="niteshgift"  class="fa-solid fa-gift"></i>
+         </a>
+         <a href="Signup.html"><i id="niteshuser"  class="fa-solid fa-user"></i></a>
+         
+           
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- NAV END***********************************NAV END********************************* -->
+    <div id="mainDiv">
+        
+
+    <form id="form" onsubmit="submitData(event)">
+
+        <div id="formDiv">
+            <ul>
+                <a href="Login.html"><li id="nssreg"><span class="jayhomah">Register </span><br><br> Please fill in the fields below:</li></a>
+            </ul>
+            <input id="userEmail" type="email" placeholder="Email">
+            <p id="emailErr"></p>
+            <input id="createPass"  type="password" placeholder="Create password">
+            <p id="passErr"></p>
+            <input id="rePass"  type="password" placeholder="Re-type-Password">
+            <p id="checkPass"></p>
+            <div id="codeDiv">
+                <input id="capCode"  type="text" placeholder="Enter the code" >
+                <img id="captchaImg" src="https://login.gearbest.com/captcha/default?0.427314315334522" alt="fdgdfdfdff">
+            </div>
+            <p id="codeCheck"></p>
+
+
+            <div id="checkDiv"><input id="checkBox" type="checkbox" ><span>I agree to boat </span>
+                <a href="">Terms and Conditions and Privacy Policies.</a></div>
+                <p id="tipsPart">Tip: To maximize online security, please do not reuse passwords or choose easy to guess ones on Gearbest.</p>
+                <button id="submit" type="submit">Register</button>
+            </form>
+            <li  id="mnop">Already have an account?  <a href="Login.html">Login</a></li>
+
+
+            <div id="google">
+             <p>or Connect via</p>
+             <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=643156394993-6mlvl2ls6f900t3fg9qr16v536fes0gq.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Flogin.gearbest.com%2Fsocial%2Ffacade%2F2&response_type=code&scope=email%20profile&display=popup&flowName=GeneralOAuthFlow"><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt=""></a>
+            </div>
+        </div>
+        <div id="futoor">
+            <a href="#"><img src="https://css.gbtcdn.com/imagecache/gbw/img/site/money_back2@.png" alt="mcafree  logo logo"></a>
+            <a href="https://www.trustedsite.com/for-consumers"><img src="https://css.gbtcdn.com/imagecache/gbw/img/site/mcafee_secure@.png" alt="moneyBack logo"></a>
+            <a href="https://www.paypal.com/us/smarthelp/contact-us"><img src="https://css.gbtcdn.com/imagecache/gbw/img/site/paypal@.png" alt="paypal logo logo"></a>
+        </div>
+        
+        <p id="copyRight">Copyright © 2014-2022 Gearbest.com. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
+<script src="Signup.js"></script>

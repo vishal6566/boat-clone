@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#logoDiv{
+    position: absolute;
+    margin: -112px 94px;
+    width: 20%;
+}
+#logoDiv img{
+max-width: 207px;
+}
+#mainDiv{
+    /* border: 1px solid red; */
+    height: auto;
+}
+#formDiv{
+    width: 27%;
+    margin-left: 33%;
+    margin-top: 10%;
+    margin-right: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 30px 40px; 
+    background-color:rgb(37,37,37) ;
+}
+#formDiv input{
+    outline: none;
+    font-size: 16px;
+   
+   
+}
+#formDiv input:hover{
+    border:1px solid yellow;
+}
+#formDiv>input{
+    display: block;
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+#formDiv ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+   font-size: 22px;
+   margin-bottom: 30px;
+}
+#formDiv>ul>a{
+    font-size: 19px;
+    font-weight: 600;
+    color: #8b8b8b;
+  text-decoration: none;
+}
+#formDiv a:hover{
+    color: black;
+}
+
+#checkDiv>a{
+    width: 50%;
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: -2px;
+    color: rgb(2, 141, 141);
+}
+#checkDiv>a:hover{
+    color: rgb(2, 141, 141);
+}
+#checkDiv{
+  margin-top: 35px;
+  color: rgb(95, 95, 95);
+}
+#checkDiv>span{
+ margin-left: 5px;
+ margin-top: -2px;
+ width: 44%;
+ font-size: 13px;
+ color:white
+}
+
+#tipsPart{
+    width: 81%;
+    margin-top: 15px;
+    font-size: 12px;
+    color: red;
+}
+
+#formDiv>#submit{
+margin-top: 20px;
+width: 92%;
+margin-left: 5px;
+font-weight: 550;
+padding: 13px;
+font-size: 18px;
+background-color:red;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 10px;
+}
+#google img{
+width: 45px;
+border: 1px solid rgb(167, 166, 166);
+border-radius: 100%;
+}
+#google {
+    margin: 5% 32%;
+width: 40%;
+text-align: center;
+line-height: 40px;
+}
+#futoor{
+margin-top: 10%;
+/* border: 1px solid green; */
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+#futoor img{
+width: 75%;
+}
+#copyRight{
+font-size: 13px;
+color: gray;
+line-height: 30px;
+text-align: center;
+}
+
+#emailErr{
+    margin-top: -20px;
+    margin-bottom: -20px;
+    font-size: 13px;
+    /* font-weight: 600; */
+    color: orangered;
+}
+#passErr{
+    margin-top: -20px;
+    margin-bottom: -20px;
+    font-size: 13px;
+    /* font-weight: 600; */
+    color: orangered;
+}
+#checkPass{
+    margin-top: -20px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    /* font-weight: 600; */
+    color: orangered;
+}
+#codeCheck{
+    margin-top: -10px;
+    margin-bottom: -20px;
+    font-size: 13px;
+    /* font-weight: 600; */
+    color: orangered;
+}
+
+#createPass{
+    margin-top: 38px;
+}
+#rePass{
+    margin-top: 38px;
+}
+#capCode{
+    margin-top: 38px;
+}
+#captchaImg{
+    margin-top: -50%;
+}
+#codeDiv>input{
+    width: 62%;
+    padding: 8px;
+    margin-bottom: 12px;
+   
+}
+#codeDiv>img{
+    /* width: 38%; */
+    margin-top: 38px;
+    margin-left: -1px;
+    height: 40px;
+    border: 1px solid rgb(173, 171, 171);
+   
+}
+#codeDiv{
+   display: flex;
+   margin-top: -34px;
+}
+#nssreg{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    left: 65px;
+    color: red;
+
+}
+.jayhomah{
+    font-size: 48px;
+    font-family:
+Montserrat, sans-serif;
+font-weight:400;
+font-style:normal;
+font-variant:normal;
+color: yellow;
+}
+#mnop{
+    position: relative;
+    color: white;
+    top: 20px;
+    left: 60px;
+
+} 
+#mnop>a{
+    color: white;
+}
+#mnop>a:hover{
+    color:white;
+}
+

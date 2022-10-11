@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STONE SPEAKER</title>
+    <style>
+        *{
+        
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #252525;
+        }
+        #navbar{
+            
+            height: 10px;
+            top: 0px;
+           position: sticky;
+            height: 85px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 100%;
+            align-items: center;
+            background-color:#252525;
+           
+        
+        }
+        #dailydeal{
+           background-color: red;
+            height: 50px;
+            width: 100%;
+            color: white;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        
+        #img1{
+            width: 70%;
+            padding-left: 50px;
+        }
+     #navbar>div:nth-child(2){
+       
+        width: 16%;
+        display: flex;
+        justify-content: space-between;
+     }
+     #shop{
+        border: none;
+       background-color: #252525;
+        color: white;
+        font-size: 18px;
+     }
+     #more{
+        border: none;
+        background-color: #252525;
+        color: white;
+        font-size: 18px;
+     }
+     h3{
+        color: white;
+     }
+     h1{
+        color: white;
+        font-size: 60px;
+        margin-top: 30px;
+        padding-left: 40px;
+     }
+     #displayProduct{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            margin-top: 40px ;
+            margin-bottom: 110px;
+        }
+        #displayProduct>div{
+            background-color: #E3E3E3;
+            border-radius: 15px;
+           
+        }
+        #displayProduct>div>div{
+            background-color: white;
+            width: 98%;
+            margin: auto;
+            border-radius: 15px;
+            padding: 0px 20px;
+            margin-bottom: 20px;
+        }
+        #displayProduct>div>div>p:last-child{
+            margin-bottom: 20px;
+        }
+        hr{
+            margin: 10px 0px;
+        }
+        #displayProduct>div>div>h3{
+            margin: 10px 0px;
+            color: #252525;
+        }
+        button{
+            width: 95%;
+            height: 50px;
+            border: none;
+            color: white;
+            background-color: red;
+            font-size: 25px;
+            margin: 10px 0px;
+            border-radius: 15px;
+        }
+        #navbar>div:last-child{
+        
+            width: 20%;
+            height: 90%;
+            display: flex;
+      
+            
+            
+        }
+        #search{
+            height: 42px;
+            width: 100%;
+            border-radius: 50px;
+        }
+     #img{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+     }
+       .img2{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+       }.img3{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+       }
+       #navbar>div:last-child>div{
+      
+        padding-top: 10px;
+       }
+       #navbar>div:last-child>div:first-child{
+        margin-left: 10px;
+        margin-right: 20px;
+       
+        width: 60%;
+       }
+      
+       #bottom{
+        
+        width: 80%;
+        margin: auto;
+       }
+       #bottom>h2{
+        
+        margin-bottom: 40px;
+       }
+    #bottom>p{
+        
+        margin-bottom: 30px;
+        font-size: 17px;
+    line-height: 29px;
+    }
+    </style>
+</head>
+<body>
+    <div id="dailydeal">Listen to the sound you deserve with Stone 135. Bag it at ₹799! 🤩</div>
+    <div id="navbar">
+        <div>
+            <img id="img1" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229" alt=""> 
+        </div>
+        <div>
+            <select name="" id="shop">
+                <option value="">Shop now</option>
+            </select>
+            <h3>Offer zone</h3>
+            <select name="" id="more">
+                <option value="">More</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <form >
+                    <input type="text" id="search" placeholder="search">
+                  
+                </form>
+            </div>
+           <div>
+            <img class="img2" src="https://tse4.mm.bing.net/th?id=OIP.F77_pDAHywiYXOTEpguwswHaHa&pid=Api&P=0&w=170&h=170" alt="">
+            <img id="img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
+          <a href="http://127.0.0.1:5500/addToCart.html" target="_blank"> <img class="img3" src="https://tse3.mm.bing.net/th?id=OIP.M5zTod2jHjvsUh2Oe5K5cQHaHa&pid=Api&P=0&w=160&h=160" alt="">
+          </a> 
+           </div>
+            
+           
+        </div>
+    </div>
+    <div id="banner">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone-Speakers_Catgry-web_5ddac427-ef95-4cc3-bcd7-5f08ab93359d.jpg?v=1634903645" alt="">
+    </div>
+   <div>
+    <h1>Wireless Speakers</h1>
+   </div>
+   <div id="displayProduct"></div>
+   <div id="bottom">
+    <h2 style="color: white;font-size: 50px;">Portable Speakers with BOAT Signature Sound</h2>
+    <p style="color: white;">Looking to buy speakers online? Get grooving with BOAT Stone wireless speakers wherever you choose to sail. The best speakers to get your hands on!  </p>
+    <p style="color: white;">Bring music to life and take your favourite music along fearlessly with portable speakers that are rugged and IPX rated to match your stride. Our speakers are ergonomic yet durable to suit every environment and every vibe.</p>
+    <p style="color: white;">Portable speakers: Carry your music, wherever you go! Powered by IPX for sweat & water resistance. BOAT portable speakers match your stride, whether on a trek, a beach, or your home! Get the best speakers in every budget and size.</p>
+    <p style="color: white;">BOAT bluetooth speakers come with the adaptability of switching to indoor and outdoor modes to suit every party or gathering.</p>
+    <p style="color: white;">The long-lasting battery life of our portable speakers makes them the best Bluetooth speakers when you’re out enjoying nature. Easy access controls let you choose your music seamlessly at all times.</p>
+    <p style="color: white;">The latest bluetooth technology in our speakers offers optimum wireless connectivity along with beautiful sound to die for. Hands-free communication and integrated smart controls make Stone the best speakers one can get.</p>
+  
+</div>
+</body>
+
+</html>
+<script>
+
+    let productData=[
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_8549ad38-acec-45d6-bba4-8b202a9bfdc1_400x.png?v=1646976976",
+         pname:"boAt Stone 500",
+         proreview:"5.0 | 1 reviews",
+         productID:"speaker1",
+         pcost:1999,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_250_black_400x.png?v=1652335909",
+         pname:"boAt Stone 250",
+         proreview:"  4.8 | 20 reviews",
+         productID:"speaker2",
+         pcost:1199,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_1_62ac3412-3b5f-4aa6-ae19-094c1421279b_400x.png?v=1651596525",
+    
+         pname:"boAt Stone 1450",
+    
+         proreview:"  5.0 | 6 reviews",
+         productID:"speaker3",
+         pcost:3999,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_blue_e09ae3e8-7534-4ad2-a9a2-1b545a423fd1_400x.png?v=1635842500",
+         pname:"boAt Stone Grenade",
+         proreview:"  4.8 | 76 reviews",
+         productID:"speaker4",
+         pcost:1199,
+        }, {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3_1b999434-bebd-4991-97e0-8ab8974b99c2_400x.png?v=1655187482",
+         pname:"boAt Stone 135",
+         proreview:" 4.8 | 386 reviews",
+         productID:"speaker5",
+         pcost:799,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/8f17d4a5-844a-472d-9c60-d9741fd0290e_400x.png?v=1625045367",
+         pname:"boAt Stone 190",
+         proreview:"  4.8 | 104 reviews",
+         productID:"speaker6",
+         pcost:1299,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1200f_main2_400x.png?v=1632893558",
+         pname:"boAt Stone 1200F",
+         proreview:"  5.0 | 28 reviews",
+         productID:"speaker7",
+         pcost:3399,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/d3e46a5d-cda9-49f8-a24f-b975fdd50689_400x.png?v=1625046393",
+         pname:"boAt Stone 180",
+         proreview: "4.8 | 12 reviews",
+         productID:"speaker8",
+         pcost:1299,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main---1_400x.png?v=1640081208",
+         pname:"boAt Party Pal 50",
+         proreview:" 5.0 | 1 reviews",
+         productID:"speaker9",
+         pcost:3999,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0efd1f68-8988-4e8a-98bc-6690ccb6a828_400x.png?v=1625045298",
+         pname:"boAt Stone 650",
+         proreview:" 4.9 | 106 reviews",
+         productID:"speaker10",
+         pcost:1699,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ce5655c3-e83f-47ad-8f9f-6db17f896a1b_400x.png?v=1625045737",
+         pname:"boAt Stone 260",
+         proreview:"  4.7 | 65 reviews",
+         productID:"speaker11",
+         pcost:1499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3e35681e-bcb1-449c-a58a-2d43e8b00bf4_400x.png?v=1633518105",
+         pname:"boAt Stone 1200",
+         proreview:"  4.9 | 70 reviews",
+         productID:"speaker12",
+         pcost:3999,
+        },
+    ]
+
+    productData.forEach(function(elem){
+        let box=document.createElement("div")
+        let img=document.createElement("img")
+        img.setAttribute("src",elem.pimg)
+        let ibox=document.createElement("div")
+        let name=document.createElement("h3")
+        name.innerText=elem.pname
+        let review=document.createElement("p")
+        review.innerText=elem.proreview
+        let hr=document.createElement("hr")
+        let price=document.createElement("p")
+        price.innerText=elem.pcost
+        let pID=document.createElement("p")
+        pID.innerText=elem.productID
+        let btn=document.createElement("button")
+        btn.innerText="Add to cart"
+        btn.style.cursor="pointer"
+        
+        ibox.append(name,review,hr,price,pID,btn)
+        box.append(img,ibox)
+        document.querySelector("#displayProduct").append(box)
+    })
+   
+    </script>
+    
+
+

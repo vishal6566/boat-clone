@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKERZ</title>
+    <style>
+        *{
+        
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #252525;
+        }
+        #navbar{
+            
+            height: 10px;
+            top: 0px;
+           position: sticky;
+            height: 85px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 100%;
+            align-items: center;
+            background-color:#252525;
+           
+        
+        }
+        #dailydeal{
+           background-color: red;
+            height: 50px;
+            width: 100%;
+            color: white;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        
+        #img1{
+            width: 70%;
+            padding-left: 50px;
+        }
+     #navbar>div:nth-child(2){
+       
+        width: 16%;
+        display: flex;
+        justify-content: space-between;
+     }
+     #shop{
+        border: none;
+       background-color: #252525;
+        color: white;
+        font-size: 18px;
+     }
+     #more{
+        border: none;
+        background-color: #252525;
+        color: white;
+        font-size: 18px;
+     }
+     h3{
+        color: white;
+     }
+     h1{
+        color: white;
+        font-size: 60px;
+        margin-top: 30px;
+        padding-left: 40px;
+     }
+     #displayProduct{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            margin-top: 40px ;
+            margin-bottom: 110px;
+        }
+        #displayProduct>div{
+            background-color: #E3E3E3;
+            border-radius: 15px;
+           
+        }
+        #displayProduct>div>div{
+            background-color: white;
+            width: 98%;
+            margin: auto;
+            border-radius: 15px;
+            padding: 0px 20px;
+            margin-bottom: 20px;
+        }
+        #displayProduct>div>div>p:last-child{
+            margin-bottom: 20px;
+        }
+        hr{
+            margin: 10px 0px;
+        }
+        #displayProduct>div>div>h3{
+            margin: 10px 0px;
+            color: #252525;
+        }
+        button{
+            width: 95%;
+            height: 50px;
+            border: none;
+            color: white;
+            background-color: red;
+            font-size: 25px;
+            margin: 10px 0px;
+            border-radius: 15px;
+        }
+        #navbar>div:last-child{
+        
+            width: 20%;
+            height: 90%;
+            display: flex;
+      
+            
+            
+        }
+        #search{
+            height: 42px;
+            width: 100%;
+            border-radius: 50px;
+        }
+     #img{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+     }
+       .img2{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+       }.img3{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+       }
+       #navbar>div:last-child>div{
+      
+        padding-top: 10px;
+       }
+       #navbar>div:last-child>div:first-child{
+        margin-left: 10px;
+        margin-right: 20px;
+       
+        width: 60%;
+       }
+      
+       #bottom{
+        
+        width: 80%;
+        margin: auto;
+       }
+       #bottom>h2{
+        
+        margin-bottom: 40px;
+       }
+    #bottom>p{
+        
+        margin-bottom: 30px;
+        font-size: 17px;
+    line-height: 29px;
+    }
+    </style>
+</head>
+<body>
+    <div id="dailydeal">Listen to the sound you deserve with Stone 135. Bag it at ₹799! 🤩</div>
+    <div id="navbar">
+        <div>
+            <img id="img1" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229" alt=""> 
+        </div>
+        <div>
+            <select name="" id="shop">
+                <option value="">Shop now</option>
+            </select>
+            <h3>Offer zone</h3>
+            <select name="" id="more">
+                <option value="">More</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <form >
+                    <input type="text" id="search" placeholder="search">
+                  
+                </form>
+            </div>
+           <div>
+            <img class="img2" src="https://tse4.mm.bing.net/th?id=OIP.F77_pDAHywiYXOTEpguwswHaHa&pid=Api&P=0&w=170&h=170" alt="">
+            <img id="img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
+          <a href="http://127.0.0.1:5500/addToCart.html" target="_blank"> <img class="img3" src="https://tse3.mm.bing.net/th?id=OIP.M5zTod2jHjvsUh2Oe5K5cQHaHa&pid=Api&P=0&w=160&h=160" alt="">
+          </a> 
+           </div>
+            
+           
+        </div>
+    </div>
+    <div id="banner">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz-_Catgry_web_d201c6e3-e067-4280-a127-56a2e1b51399.jpg?v=1634806683" alt="">
+    </div>
+   <div>
+    <h1>Wireless Headphones</h1>
+   </div>
+   <div id="displayProduct"></div>
+   <div id="bottom">
+    <h2 style="color: white;font-size: 50px;">Rockerz – Enjoy the Vibe With the Best Wireless Headphones</h2>
+    <p style="color: white;">Effortless. Simple. Powerful. boAt Rockerz Wireless series brings high-fidelity audio paired with premium design to experience sound like no other. From deep, rich bass to clean highs, you’ll hear every note with a new sense of clarity. boAt Rockerz come with premium dynamic drivers tweaked as per boAt’s high quality standards.</p>
+    <p style="color: white;">The Rockerz series is expertly crafted to give the best sounding experience whether it is playing games, talking on a call or enjoying media, all while offering a balanced experience. These wireless earphones can last for hours with boAt’s proprietary ASAP™ Fast Charge technology that charges the earbuds within a short time if it ever runs low on battery.  </p>
+    <p style="color: white;">With the latest Bluetooth technology, instant pairing and switching between devices has never been easier. Setup and pair your bluetooth earphones with a single tap and start the day with high energy as Rockerz instantly pairs as soon as it's switched on.</p>
+    <p style="color: white;">With Qualcomm’s latest chipsets built in, Rockerz offers real-time experience with low latency and extended battery usage. Featuring Enx noise cancellation technology, the technology suppresses and cancels out ambient noise for clear voice capture, delivering the best possible sound quality on headphones, earphones with mic etc. Passive noise cancelling earphones take immersion to the next level with crisp and clear audio along with one touch Google or Siri activation that makes life easier.</p>
+    <p style="color: white;">Keeping up with the latest trends, these bluetooth earphones are meticulously designed and crafted with premiumness, comfort and durability in mind while being protected by an IPX rating that is resistant to water and splashes. Sweating it out in the gym or playing ambient sounds for a quiet reading session, Rockerz has it covered, all in style.</p>
+    <p style="color: white;">Our headphones feature soft ear cups to lightweight premium neckband fit that reduce pressure and offer unrivaled comfort for a premium, snug fit. Whether you are out for an excursion or just enjoying me-time; pushing oneself at the gym or at work from home, the Rockerz series are the perfect companion. Keeping up with the latest trends, Rockerz earphones are available in a variety of colours to choose from. Drawing from industry experience, boAt brings to you the best headphones, earphones and neckbands the industry has to offer. </p>
+    
+</div>
+</body>
+
+</html>
+<script>
+
+    let productData=[
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/m2_852f9f1f-5498-4e5a-b6a2-0645a7abbc41_400x.png?v=1639153081",
+         pname:"boAt Rockerz 333 Pro",
+         proreview:"4.8 | 915 reviews",
+         productID:"Rockerz1",
+         pcost:999,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1be19528-6d06-4cab-8815-02618b93d3c9_400x.png?v=1625045854",
+         pname:"boAt Rockerz 255 Pro",
+         proreview:"4.9 | 266 reviews",
+         productID:"Rockerz2",
+         pcost:1499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-235-v2-blue_f69b43bd-1bf3-41f0-a199-837a1eebb711_400x.png?v=1614462143",
+    
+         pname:"TRebel Rockerz 235 V2",
+    
+         proreview:"4.9 | 18 reviews",
+         productID:"Rockerz3",
+         pcost:1499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img-R333-1_400x.png?v=1641801662",
+         pname:"boAt Rockerz 550",
+         proreview:"4.7 | 44 reviews",
+         productID:"Rockerz4",
+         pcost:1299,
+        }, {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_400x.png?v=1625046144",
+         pname:"boAt Rockerz 3332",
+         proreview:"4.8 | 392 reviews",
+         productID:"Rockerz5",
+         pcost:1299,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_2_400x.png?v=1627276367",
+         pname:"boAt Rockerz 245 V2",
+         proreview:"4.8 | 271 reviews",
+         productID:"Rockerz6",
+         pcost:2499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/709d5346-3135-495f-ba7b-80fae784af83_400x.png?v=1625045493",
+         pname:"boAt Rockerz 510",
+         proreview:"4.8 | 15 reviews",
+         productID:"Rockerz7",
+         pcost:1499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_a08fff6a-7c3d-4663-9499-3421df127e94_400x.png?v=1641801688",
+         pname:"boAt Rockerz 330s",
+         proreview:"4.8 | 107 reviews",
+         productID:"Rockerz8",
+         pcost:1599,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ed46e58c-9643-43e0-b350-9539d293aa51_400x.png?v=1625045114",
+         pname:"boAt Rockerz 235 V2",
+         proreview:"4.8 | 24 reviews",
+         productID:"Rockerz9",
+         pcost:1999,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/7499af44-9d7a-489c-80f0-51f7799289e4_400x.png?v=1625045491",
+         pname:"boAt Rockerz 450",
+         proreview:"4.9 | 29 reviews",
+         productID:"Rockerz10",
+         pcost:1899,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/6af12e30-e6d0-43d3-afd2-500065309a3e_400x.png?v=1625552657",
+         pname:"boAt Rockerz 255 Pro+",
+         proreview:"4.8 | 8 reviews",
+         productID:"Rockerz11",
+         pcost:1999,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-255-pro-red_bd675504-5750-4b42-97b9-79caf2cc9034_400x.png?v=1614587254",
+         pname:"TRebel Rockerz 255 Pro",
+         proreview:"4.8 | 453 reviews",
+         productID:"Rockerz12",
+         pcost:1699,
+        },
+    ]
+
+    productData.forEach(function(elem){
+        let box=document.createElement("div")
+        let img=document.createElement("img")
+        img.setAttribute("src",elem.pimg)
+        let ibox=document.createElement("div")
+        let name=document.createElement("h3")
+        name.innerText=elem.pname
+        let review=document.createElement("p")
+        review.innerText=elem.proreview
+        let hr=document.createElement("hr")
+        let price=document.createElement("p")
+        price.innerText=elem.pcost
+        let pID=document.createElement("p")
+        pID.innerText=elem.productID
+        let btn=document.createElement("button")
+        btn.innerText="Add to cart"
+        btn.style.cursor="pointer"
+        
+        ibox.append(name,review,hr,price,pID,btn)
+        box.append(img,ibox)
+        document.querySelector("#displayProduct").append(box)
+    })
+   
+    </script>
+    
+
+

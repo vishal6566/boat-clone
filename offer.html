@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offer</title>
+    <style>
+        *{
+        
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #252525;
+        }
+        #navbar{
+            
+            height: 10px;
+            top: 0px;
+           position: sticky;
+            height: 85px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 100%;
+            align-items: center;
+            background-color:#252525;
+           
+        
+        }
+        #offers{
+            border: 1px solid red;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            margin: 50px 0px;
+            padding: 50px 0px;
+            background-color: #F2F0F1;
+        }
+        #offers>div{
+            background-color: white;
+
+        }
+        #dailydeal{
+           background-color: red;
+            height: 50px;
+            width: 100%;
+            color: white;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        
+        #img1{
+            width: 70%;
+            padding-left: 50px;
+        }
+     #navbar>div:nth-child(2){
+       
+        width: 16%;
+        display: flex;
+        justify-content: space-between;
+     }
+     #shop{
+        border: none;
+       background-color: #252525;
+        color: white;
+        font-size: 18px;
+     }
+     #more{
+        border: none;
+        background-color: #252525;
+        color: white;
+        font-size: 18px;
+     }
+     h3{
+        color: white;
+     }
+     h1{
+        color: white;
+        font-size: 60px;
+        margin-top: 30px;
+        padding-left: 40px;
+     }
+     #displayProduct{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            margin-top: 40px ;
+            margin-bottom: 110px;
+        }
+        #displayProduct>div{
+            background-color: #E3E3E3;
+            border-radius: 15px;
+           
+        }
+        #displayProduct>div>div{
+            background-color: white;
+            width: 98%;
+            margin: auto;
+            border-radius: 15px;
+            padding: 0px 20px;
+            margin-bottom: 20px;
+        }
+        #displayProduct>div>div>p:last-child{
+            margin-bottom: 20px;
+        }
+        hr{
+            margin: 10px 0px;
+        }
+        #displayProduct>div>div>h3{
+            margin: 10px 0px;
+            color: #252525;
+        }
+        button{
+            width: 95%;
+            height: 50px;
+            border: none;
+            color: white;
+            background-color: red;
+            font-size: 25px;
+            margin: 10px 0px;
+            border-radius: 15px;
+        }
+        #navbar>div:last-child{
+        
+            width: 20%;
+            height: 90%;
+            display: flex;
+      
+            
+            
+        }
+        #search{
+            height: 42px;
+            width: 100%;
+            border-radius: 50px;
+        }
+     #img{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+     }
+       .img2{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+       }.img3{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+       }
+       #navbar>div:last-child>div{
+      
+        padding-top: 10px;
+       }
+       #navbar>div:last-child>div:first-child{
+        margin-left: 10px;
+        margin-right: 20px;
+       
+        width: 60%;
+       }
+      
+       #bottom{
+        
+        width: 80%;
+        margin: auto;
+       }
+       #bottom>h2{
+        
+        margin-bottom: 40px;
+       }
+    #bottom>p{
+        
+        margin-bottom: 30px;
+        font-size: 17px;
+    line-height: 29px;
+    }
+   
+    </style>
+</head>
+<body>
+    <div id="dailydeal">Listen to the sound you deserve with Stone 135. Bag it at ₹799! 🤩</div>
+    <div id="navbar">
+        <div>
+            <img id="img1" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229" alt=""> 
+        </div>
+        <div>
+            <select name="" id="shop">
+                <option value="">Shop now</option>
+            </select>
+            <h3>Offer zone</h3>
+            <select name="" id="more">
+                <option value="">More</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <form >
+                    <input type="text" id="search" placeholder="search">
+                  
+                </form>
+            </div>
+           <div>
+            <img class="img2" src="https://tse4.mm.bing.net/th?id=OIP.F77_pDAHywiYXOTEpguwswHaHa&pid=Api&P=0&w=170&h=170" alt="">
+            <img id="img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
+          <a href="http://127.0.0.1:5500/addToCart.html" target="_blank"> <img class="img3" src="https://tse3.mm.bing.net/th?id=OIP.M5zTod2jHjvsUh2Oe5K5cQHaHa&pid=Api&P=0&w=160&h=160" alt="">
+          </a> 
+           </div>
+            
+           
+        </div>
+    </div>
+    <div id="banner">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/offer-page_strip_Web.jpg?v=1634206843" alt="">
+    </div>
+    <div id="offers">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/zest-Logo.jpg?v=1652950755" alt="">
+            <h3>Flat 10% cashback upto INR 500</h3>
+            <p>Validity </p>
+            <p>31st May 2022</p>
+            <button>Terms & Condition</button>
+            </div>
+        <div>
+            
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Walnut369_Logo-Reverse_forLightBG_PDF_4x_aafc5a96-b7c9-423a-b640-8102adf490ac.jpg?v=1652949559" alt="">
+            <h3>Get a cashback upto 20% upto 500 with walnut 369</h3>
+            <p>Validity </p>
+            <p>16th june 2022</p>
+            <button>Terms & Condition</button></div>
+        <div>
+            
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Ola_money.jpg?v=1649227976" alt="">
+            <h3> Flat 10% cashback on transaction up to 750</h3>
+            <p>Validity </p>
+            <p>30th june 2022</p>
+            <button>Terms & Condition</button></div>
+        </div>
+   <div>
+    <h1>Offer Zone</h1>
+   </div>
+   <div id="displayProduct"></div>
+  
+</body>
+
+</html>
+<script>
+
+    let productData=[
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/32011675-2ad8-4b99-9787-895caf201d28_400x.png?v=1642405569",
+         pname:"boAt Airdopes 131 - Wireless Earbuds",
+         proreview:"4.8 | 915 reviews",
+         productID:"offer1",
+         pcost:1199,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f7d33ad-39a9-4426-836e-c300814839b9_400x.png?v=1625046105",
+         pname:"boAt Rockerz 235 V2",
+         proreview:"4.9 | 266 reviews",
+         productID:"offer2",
+         pcost:1099,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_400x.png?v=1612765376",
+    
+         pname:"boAt Airdopes 121 v2",
+    
+         proreview:"4.9 | 18 reviews",
+         productID:"offer3",
+         pcost:1299,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a6549acb-b075-4c3e-8ed3-9c9fcba32d42_400x.png?v=1625046216",
+         pname:"boAt Storm",
+         proreview:"4.7 | 44 reviews",
+         productID:"offer4",
+         pcost:2499,
+        }, {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/6af12e30-e6d0-43d3-afd2-500065309a3e_400x.png?v=1625552657",
+         pname:"boAt Rockerz 255 Pro+",
+         proreview:" 4.8 | 309 reviews",
+         productID:"offer5",
+         pcost:1499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_743eb2f9-663e-4359-ae9d-192e5f0ed056_400x.png?v=1623832759",
+         pname:"boAt BassHeads 105",
+         proreview:"4.8 | 271 reviews",
+         productID:"offer6",
+         pcost:499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5752f5e4-89e0-4f84-b7fe-4d9f85771046_400x.png?v=1625157753",
+         pname:"boAt Watch Flash",
+         proreview:"4.8 | 15 reviews",
+         productID:"offer7",
+         pcost:2499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0efd1f68-8988-4e8a-98bc-6690ccb6a828_400x.png?v=1625045298",
+         pname:"boAt Stone 650",
+         proreview:"4.8 | 107 reviews",
+         productID:"offer8",
+         pcost:1699,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3e35681e-bcb1-449c-a58a-2d43e8b00bf4_400x.png?v=1633518105",
+         pname:"boAt Stone 1200",
+         proreview:"4.8 | 24 reviews",
+         productID:"offer9",
+         pcost:3999,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/963d0725-90b9-42a4-9fcc-a842968cfee4_400x.png?v=1625045778",
+         pname:"Misfit T200",
+         proreview:"4.9 | 29 reviews",
+         productID:"offer10",
+         pcost:1649,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_2_400x.png?v=1632715015",
+         pname:"boAt Immortal 1300",
+         proreview:"4.8 | 8 reviews",
+         productID:"offer11",
+         pcost:2899,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/35ca6350-d6f3-4bc2-a742-01b2c88d80c4_32f4ee23-49e0-4671-a25c-d92c8e085785_400x.png?v=1646389952",
+         pname:"Trebel Rockerz 255 Pro+",
+         proreview:"4.8 | 453 reviews",
+         productID:"offer12",
+         pcost:1599,
+        },
+    ]
+    display(productData)
+function display(productData){
+    productData.forEach(function(elem){
+        let box=document.createElement("div")
+        let img=document.createElement("img")
+        img.setAttribute("src",elem.pimg)
+        let ibox=document.createElement("div")
+        let name=document.createElement("h3")
+        name.innerText=elem.pname
+        let review=document.createElement("p")
+        review.innerText=elem.proreview
+        let hr=document.createElement("hr")
+        let price=document.createElement("p")
+        price.innerText=elem.pcost
+        let pID=document.createElement("p")
+        pID.innerText=elem.productID
+        let btn=document.createElement("button")
+        btn.innerText="Add to cart"
+        btn.style.cursor="pointer"
+        
+        ibox.append(name,review,hr,price,pID,btn)
+        box.append(img,ibox)
+        document.querySelector("#displayProduct").append(box)
+    })
+   
+}
+  
+    </script>
+    
+
+

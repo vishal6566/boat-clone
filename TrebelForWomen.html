@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tRebel</title>
+    <style>
+        *{
+        
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #252525;
+        }
+        #navbar{
+            
+            height: 10px;
+            top: 0px;
+           position: sticky;
+            height: 85px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 100%;
+            align-items: center;
+            background-color:#252525;
+           
+        
+        }
+        #dailydeal{
+           background-color: red;
+            height: 50px;
+            width: 100%;
+            color: white;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        
+        #img1{
+            width: 70%;
+            padding-left: 50px;
+        }
+     #navbar>div:nth-child(2){
+       
+        width: 16%;
+        display: flex;
+        justify-content: space-between;
+     }
+     #shop{
+        border: none;
+       background-color: #252525;
+        color: white;
+        font-size: 18px;
+     }
+     #more{
+        border: none;
+        background-color: #252525;
+        color: white;
+        font-size: 18px;
+     }
+     h3{
+        color: white;
+     }
+     h1{
+        color: white;
+        font-size: 60px;
+        margin-top: 30px;
+        padding-left: 40px;
+     }
+     #displayProduct{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            margin-top: 40px ;
+            margin-bottom: 110px;
+        }
+        #displayProduct>div{
+            background-color: #E3E3E3;
+            border-radius: 15px;
+           
+        }
+        #displayProduct>div>div{
+            background-color: white;
+            width: 98%;
+            margin: auto;
+            border-radius: 15px;
+            padding: 0px 20px;
+            margin-bottom: 20px;
+        }
+        #displayProduct>div>div>p:last-child{
+            margin-bottom: 20px;
+        }
+        hr{
+            margin: 10px 0px;
+        }
+        #displayProduct>div>div>h3{
+            margin: 10px 0px;
+            color: #252525;
+        }
+        button{
+            width: 95%;
+            height: 50px;
+            border: none;
+            color: white;
+            background-color: red;
+            font-size: 25px;
+            margin: 10px 0px;
+            border-radius: 15px;
+        }
+        #navbar>div:last-child{
+        
+            width: 20%;
+            height: 90%;
+            display: flex;
+      
+            
+            
+        }
+        #search{
+            height: 42px;
+            width: 100%;
+            border-radius: 50px;
+        }
+     #img{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+     }
+       .img2{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+       }.img3{
+        width: 30%;
+        height: 50%;
+        padding-right: 10px;
+       }
+       #navbar>div:last-child>div{
+      
+        padding-top: 10px;
+       }
+       #navbar>div:last-child>div:first-child{
+        margin-left: 10px;
+        margin-right: 20px;
+       
+        width: 60%;
+       }
+      
+       #bottom{
+        
+        width: 80%;
+        margin: auto;
+       }
+       #bottom>h2{
+        
+        margin-bottom: 40px;
+       }
+    #bottom>p{
+        
+        margin-bottom: 30px;
+        font-size: 17px;
+    line-height: 29px;
+    }
+    </style>
+</head>
+<body>
+    <div id="dailydeal">Listen to the sound you deserve with Stone 135. Bag it at ₹799! 🤩</div>
+    <div id="navbar">
+        <div>
+            <img id="img1" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229" alt=""> 
+        </div>
+        <div>
+            <select name="" id="shop">
+                <option value="">Shop now</option>
+            </select>
+            <h3>Offer zone</h3>
+            <select name="" id="more">
+                <option value="">More</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <form >
+                    <input type="text" id="search" placeholder="search">
+                  
+                </form>
+            </div>
+           <div>
+            <img class="img2" src="https://tse4.mm.bing.net/th?id=OIP.F77_pDAHywiYXOTEpguwswHaHa&pid=Api&P=0&w=170&h=170" alt="">
+            <img id="img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
+          <a href="http://127.0.0.1:5500/addToCart.html" target="_blank"> <img class="img3" src="https://tse3.mm.bing.net/th?id=OIP.M5zTod2jHjvsUh2Oe5K5cQHaHa&pid=Api&P=0&w=160&h=160" alt="">
+          </a> 
+           </div>
+            
+           
+        </div>
+    </div>
+    <div id="banner">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Trebel_Category_Web.jpg?v=1634903645" alt="">
+    </div>
+   <div>
+    <h1>TRebel</h1>
+   </div>
+   <div id="displayProduct"></div>
+   <div id="bottom">
+    <h2 style="color: white;font-size: 50px;">TRebel - Audiowear for Fierce Women & Girls</h2>
+    <p style="color: white;">For the unconstrained, the go-getters, the unapologetically rebellious women. TRebel is a celebration of women who know their worth, and won’t let any stone unturned to go after their dreams! The ones who are defined only by their own rules. We at boAt stand to enable the Indian women of today and tomorrow with a vibrant collection of wireless earphones for women that are designed to match your stride and your attitude.</p>
+    <p style="color: white;">Get your chic going with bluetooth earphones for girls that never let you down, just like your goals. Powered with IPX ratings to keep you going, be it workout sweat, or rain! Vibe with only the best wireless earphones for women, that are backed by insane playback time & battery capacity so the music never stops. Stay connected every moment with Bluetooth V5.0.</p>
+    <p style="color: white;">Your rules, your sass, your passion, powered by BOAT’s women earbuds. For everything you need to keep the music in your life going, BOAT has your back!</p>
+    
+  
+  
+</div>
+</body>
+
+</html>
+<script>
+
+    let productData=[
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3.1_46f69d85-75a0-483c-a215-2a29ee068b3c_400x.png?v=1646394746",
+         pname:"TRebel Watch Blaze",
+         proreview:" 5.0 | 5 reviews",
+         productID:"trebel1",
+         pcost:3999,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-381-pink_9a1088cc-2e91-4acb-9d7c-841033532bfe_400x.png?v=1615468286",
+         pname:"TRebel Airdopes 381",
+         proreview:"4.8 | 37 reviews",
+         productID:"trebel2",
+         pcost:1999,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mint--orange_400x.png?v=1634371640",
+    
+         pname:"TRebel BassHeads 100",
+    
+         proreview:" 5.0 | 9 reviews",
+         productID:"trebel3",
+         pcost:399,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main6_2_8e1cdd84-4a34-4e92-97c5-0e1d4ba6da46_400x.png?v=1646393710",
+         pname:"TRebel Watch Xtend‌",
+         proreview:" 5.0 | 3 reviews",
+         productID:"trebel4",
+         pcost:799,
+        }, {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Banner2-product_400x.png?v=1622705253",
+         pname:"boAt Micro USB 150 1.5 Meter",
+         proreview:" 5.0 | 2 reviews",
+         productID:"trebel5",
+         pcost:3499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/88dfba7c-19fd-4aef-a278-41c0d2d35366_400x.png?v=1624882639",
+         pname:"TRebel Rockerz 450",
+         proreview:" 4.8 | 22 reviews",
+         productID:"trebel6",
+         pcost:1499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/green_400x.png?v=1646288213",
+         pname:"TRebel BassHeads 103",
+         proreview:"5.0 | 4 reviews",
+         productID:"trebel7",
+         pcost:399,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/white_0c484c51-8b11-487b-bd27-c31b09780700_400x.png?v=1648723865",
+         pname:"TRebel Airdopes 141",
+         proreview: " 5.0 | 23 reviews",
+         productID:"trebel8",
+         pcost:1499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_fe165a26-9efc-4c53-bf06-dbbf2a1f186e_400x.png?v=1632913833",
+         pname:"TRebel BassHeads 102",
+         proreview:" 5.0 | 8 reviews",
+         productID:"trebel9",
+         pcost:449,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-171-blue_c6dc7d5b-da81-40a0-9946-1c3ceab16c18_400x.png?v=1614457058",
+         pname:"TRebel Airdopes 171",
+         proreview:" 5.0 | 1 reviews",
+         productID:"trebel10",
+         pcost:1799,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-441-cornflowerblue_0c7ef29e-c038-4b24-b1fd-3fd289f7714e_400x.png?v=1614505072",
+         pname:"Trebel Airdopes 441 - Wireless",
+         proreview:" 4.8 | 5 reviews",
+         productID:"trebel11",
+         pcost:2499,
+        },
+        {pimg:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_a1933895-c799-482b-a5a2-b01a72337726_400x.png?v=1646393240",
+         pname:"TRebel Watch Matrix",
+         proreview:" 5.4 | 1 reviews",
+         productID:"trebel12",
+         pcost:4999,
+        },
+    ]
+
+    productData.forEach(function(elem){
+        let box=document.createElement("div")
+        let img=document.createElement("img")
+        img.setAttribute("src",elem.pimg)
+        let ibox=document.createElement("div")
+        let name=document.createElement("h3")
+        name.innerText=elem.pname
+        let review=document.createElement("p")
+        review.innerText=elem.proreview
+        let hr=document.createElement("hr")
+        let price=document.createElement("p")
+        price.innerText=elem.pcost
+        let pID=document.createElement("p")
+        pID.innerText=elem.productID
+        let btn=document.createElement("button")
+        btn.innerText="Add to cart"
+        btn.style.cursor="pointer"
+        
+        ibox.append(name,review,hr,price,pID,btn)
+        box.append(img,ibox)
+        document.querySelector("#displayProduct").append(box)
+    })
+   
+    </script>
+    
+
+

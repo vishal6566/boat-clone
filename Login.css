@@ -1,0 +1,365 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#logoDiv{
+    position: absolute;
+    margin: -112px 94px;
+    width: 20%;
+    background-color:rgb(37,37,37);
+    
+}
+#logoDiv img{
+max-width: 207px;
+}
+#mainDiv{
+    /* border: 1px solid red; */
+    height: auto;
+}
+#formDiv{
+    width: 27%;
+    margin-left: 38%;
+    margin-top: 10%;
+    margin-right: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 30px 40px; 
+    background-color: rgb(37,37,37);
+}
+#formDiv input{
+    outline: none;
+    font-size: 16px;
+   
+}
+#formDiv input:hover{
+    border:1px solid yellow;
+}
+#formDiv>input{
+    display: block;
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+#formDiv ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+   font-size: 22px;
+   margin-bottom: 30px;
+}
+#formDiv a{
+    font-size: 19px;
+    font-weight: 600;
+    color: #8b8b8b;
+  text-decoration: none;
+}
+#formDiv a:hover{
+    color: black;
+}
+
+#checkDiv{
+  display: flex;
+}
+#checkDiv>a{
+    width: 50%;
+    margin-left: 60px;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 20px;
+color: white;
+font-size: 14px;
+}
+#checkDiv>a:hover{
+    color: red;
+}
+#checkDiv>p{
+ margin-left: 10px;
+ margin-top: 20px;
+ width: 44%;
+ font-size: 14px;
+ color: white;
+}
+#checkDiv>input{
+ margin-top: 21px;
+}
+#checkDiv>img{
+    height: 17px;
+    margin-left: -6px;
+margin-top: 20px;
+
+}
+#formDiv>#submit{
+margin-top: 20px;
+width: 92%;
+margin-left: 5px;
+font-weight: 550;
+padding: 13px;
+font-size: 18px;
+background-color: red;
+border: none;
+cursor: pointer;
+}
+#google img{
+width: 45px;
+border: 1px solid rgb(167, 166, 166);
+border-radius: 100%;
+}
+#google {
+    margin: 5% 32%;
+width: 40%;
+text-align: center;
+line-height: 40px;
+}
+#futoor{
+margin-top: 10%;
+/* border: 1px solid green; */
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+#futoor img{
+width: 75%;
+}
+#copyRight{
+font-size: 13px;
+color: gray;
+line-height: 30px;
+text-align: center;
+}
+
+#emailError{
+    margin-top: -20px;
+    margin-bottom: -20px;
+    font-size: 13px;
+    /* font-weight: 600; */
+    color: orangered;
+}
+
+#passError{
+    margin-top: -20px;
+    margin-bottom: -2px;
+    font-size: 13px;
+    /* font-weight: 600; */
+    color: orangered;
+}
+#checkPassword_In{
+    margin-top: 38px;
+}
+
+#checkDiv i{
+    font-size: 15px;
+margin-top: 21px;
+margin-left: -7px;
+color: gary;
+color: grey;
+}
+/* **************************************** */
+
+
+#create{
+            
+    /* display: block; */
+    margin-top: 0px;
+    /* border: 4px solid yellow; */
+    height: 50px;
+    width: 100%;
+    color: white;
+}
+#create>p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#create>p>a:hover{
+     color: white;
+}
+#midbox{
+    width: 100%;
+    height: 80px;
+    background-color: #2c2c2c;
+    /* border: 4px solid yellow; */
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+#midbox >div{
+          width: 75%;
+          height: 60%;
+          margin: auto;
+          /* border: 4px solid green; */
+}
+#midbox>div >p{
+    text-align: center;
+    margin: auto;
+    color: rgb(190, 172, 172);
+}
+#lastbox{
+    background-color: black;
+    /* border: 3px solid rgb(42, 22, 221); */
+    width: 100%;
+    height: 750px;
+}
+#first{
+    /* border: 4px solid rgb(23, 212, 23); */
+    height: 70%;
+    width: 100%;
+    display: flex;
+    margin-top: 0px;
+    padding-top: 40px;
+}
+#first>div:first-child{
+    width: 44%;
+    height: 70%;
+    /* border: 4px solid yellow; */
+}
+#first>div:last-child{
+    width: 56%;
+    height: 100%;
+    /* border: 10px solid pink; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100%;
+    gap: 10px;
+
+}
+#first>div:last-child p{
+        color: gray;
+        cursor: pointer;
+}
+#first>div:last-child h3{
+        color: white;
+}
+#first>div:last-child>div{
+
+    height: 100%; 
+    /* border: 4px solid rgb(61, 226, 11); */
+    margin-top: -10px;
+    /* background-color: white; */
+}
+#first>div:first-child>div{
+    width: 90%;
+    height: 80%;
+    /* border: 4px solid rgb(219, 4, 4); */
+    margin: auto;
+    color: gray;
+}
+#first>div:first-child>div>img{
+    width: 16%;
+    height: 16%;
+    /* border: 4px solid rgb(219, 4, 4); */
+    margin: auto;
+}
+#first>div:first-child>div>div{
+    width: 60%;
+    height: 30%;
+    /* border: 4px solid rgb(98, 10, 199); */
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 80%;
+    gap: 0px;
+    
+}
+#first>div:first-child>div>div>div{
+      /* border: 3px solid red; */
+      border-radius: 4px;
+      display: grid;
+      /* justify-content: center; */
+      align-items: center;
+}
+#first>div:first-child>div>div>div>a>img{
+      /* border: 4px solid black; */
+      background-color: transparent;
+      width: 70%;
+      height: 70%;
+      border-radius: 10px ;
+      margin: auto;
+      padding-left: 15px;
+
+}
+#last{
+     /* border: 10px solid rgb(214, 10, 61); */
+     height: 25%;
+     width: 100%;
+     display: flex;
+     margin-top: 0px;
+}
+#last>div:first-child{
+    /* border: 4px solid rgb(55, 0, 255); */
+    height: 40%;
+    width: 40%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#last>div:last-child{
+    /* border: 4px solid rgb(212, 22, 22); */
+    height: 40%;
+    width: 60%;
+    margin-top: 0px;
+    display: flex;
+    justify-content:center;
+}
+#last>div:last-child>div{
+    /* border: 4px solid rgb(4, 18, 212); */
+    height: 100%;
+    width: 78%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h4{
+    color: white;
+}
+#third{
+    text-align: center;
+    color: grey;
+    margin-top: -110px;
+    background-color: black;
+}
+#socialmedia >div:hover{
+    background-color: white;
+}
+.offer-zone{
+    margin-top: -24px;
+
+}
+#formDiv ul{
+    margin-bottom: 110px;
+}
+#creatacc{
+    position: relative;
+    color: white;
+    top: 20px;
+    left: 60px;
+}
+#creatacc>a{
+    color: white;
+}
+#creatacc>a:hover{
+    color: white;
+}
+
+#loginns{
+    color: white;
+    font-size: 40px;
+    margin-left: 148px;
+    position: relative;
+    top: 2px;
+    color: yellow;
+}
+#loginns>a{
+    color:white;
+
+}
+#logtext111{
+    color: white;
+    position: absolute;
+    top: 350px;
+    margin-left: 80px;
+    color: red;
+}
